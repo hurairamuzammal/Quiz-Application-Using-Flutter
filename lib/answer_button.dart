@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 
 // the class here is the styling of buttons
 class AnswerButton extends StatelessWidget {
-  const AnswerButton(
-      {super.key, required this.answerText, required this.onTap});
+  const AnswerButton({
+    super.key,
+    required this.answerText,
+    required this.onTap,
+  });
   final String answerText;
   final void Function() onTap;
   @override
