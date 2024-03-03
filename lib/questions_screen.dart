@@ -1,9 +1,8 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 //adding button dart file here
 import 'package:quiz_app/answer_button.dart';
 import 'package:quiz_app/data/questions.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class QuestionScreen extends StatefulWidget {
   QuestionScreen({super.key});
@@ -35,16 +34,23 @@ class _QuestionScreenState extends State<QuestionScreen> {
       // this command use all the width on screen
       width: double.infinity,
       child: Container(
-        margin: const EdgeInsets.all(40),
+        margin: const EdgeInsets.all(25),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
               currentQuestion.text,
-              style: const TextStyle(
+              style: GoogleFonts.montserrat(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
+              // style: const TextStyle(
+              //   fontSize: 24,
+              //   fontWeight: FontWeight.bold,
+              //   color: Colors.white,
+              // ),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
