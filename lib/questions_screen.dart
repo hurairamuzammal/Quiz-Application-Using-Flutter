@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 //adding button dart file here
 import 'package:quiz_app/answer_button.dart';
@@ -16,8 +18,12 @@ class _QuestionScreenState extends State<QuestionScreen> {
     //display prompt that this function is called
     // print('indexIncrement called');
     setState(() {
-      print("hello ${widget.indexNumber}");
-      widget.indexNumber++;
+      if (widget.indexNumber < questions.length - 1) {
+        widget.indexNumber++;
+      } else {
+        widget.indexNumber = 0;
+      }
+      // widget.indexNumber++;
     });
   }
 
