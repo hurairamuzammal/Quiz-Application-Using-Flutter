@@ -4,26 +4,26 @@ import 'package:quiz_app/answer_button.dart';
 import 'package:quiz_app/data/questions.dart';
 
 class QuestionScreen extends StatefulWidget {
-  const QuestionScreen({super.key});
+  QuestionScreen({super.key});
+  var indexNumber = 0;
 
   @override
   State<QuestionScreen> createState() => _QuestionScreenState();
 }
 
 class _QuestionScreenState extends State<QuestionScreen> {
-  var indexNumber = 0;
-
   void indexIncrement() {
     //display prompt that this function is called
     // print('indexIncrement called');
     setState(() {
-      indexNumber++;
+      print("hello ${widget.indexNumber}");
+      widget.indexNumber++;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    final currentQuestion = questions[3];
+    final currentQuestion = questions[widget.indexNumber];
 
     return SizedBox(
       // this command use all the width on screen
@@ -41,7 +41,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
               ),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             ...currentQuestion.getShuffledAnswers().map((answer) {
               return AnswerButton(
                 answerText: answer,
