@@ -44,7 +44,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
               style: GoogleFonts.montserrat(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: const Color.fromARGB(255, 255, 175, 222)),
+                  color: const Color.fromARGB(255, 255, 194, 234)),
               // style: const TextStyle(
               //   fontSize: 24,
               //   fontWeight: FontWeight.bold,
