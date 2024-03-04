@@ -4,8 +4,10 @@ import 'package:quiz_app/answer_button.dart';
 import 'package:quiz_app/data/questions.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// ignore: must_be_immutable
 class QuestionScreen extends StatefulWidget {
-  QuestionScreen({super.key});
+  QuestionScreen({super.key, required this.onSelectedAnswer});
+  final void Function(String) onSelectedAnswer;
   var indexNumber = 0;
 
   @override
@@ -13,16 +15,16 @@ class QuestionScreen extends StatefulWidget {
 }
 
 class _QuestionScreenState extends State<QuestionScreen> {
+  void answerQuestion(String chooseAnswer) {
+    widget.onSelectedAnswer(chooseAnswer);
+  }
+
   void indexIncrement() {
     //display prompt that this function is called
     // print('indexIncrement called');
+
     setState(() {
-      if (widget.indexNumber < questions.length - 1) {
-        widget.indexNumber++;
-      } else {
-        widget.indexNumber = 0;
-      }
-      // widget.indexNumber++;
+      widget.indexNumber++;
     });
   }
 
@@ -56,7 +58,10 @@ class _QuestionScreenState extends State<QuestionScreen> {
             ...currentQuestion.getShuffledAnswers().map((answer) {
               return AnswerButton(
                 answerText: answer,
-                onTap: indexIncrement,
+                onTap: () {
+                  indexIncrement();
+                  answerQuestion(answer);
+                },
               );
             }),
           ],
