@@ -75,7 +75,7 @@
     },
     {
       "name": "google_fonts",
-      "rootUri": "file:///C:/Users/Huraira/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-6.2.0",
+      "rootUri": "file:///C:/Users/Huraira/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-6.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -272,7 +272,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-03-03T20:19:33.138851Z",
+  "generated": "2024-03-04T16:45:33.004774Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }
