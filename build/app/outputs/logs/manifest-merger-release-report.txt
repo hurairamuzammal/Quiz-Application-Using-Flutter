@@ -12,7 +12,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Hu
 	android:label
 		ADDED from C:\Users\Huraira\Extras\quiz_app\android\app\src\main\AndroidManifest.xml:3:9-33
 	android:icon
-		ADDED from C:\Users\Huraira\Extras\quiz_app\android\app\src\main\AndroidManifest.xml:5:9-43
+		ADDED from C:\Users\Huraira\Extras\quiz_app\android\app\src\main\AndroidManifest.xml:5:9-45
 	android:name
 		INJECTED from C:\Users\Huraira\Extras\quiz_app\android\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Huraira\Extras\quiz_app\android\app\src\main\AndroidManifest.xml:4:9-42

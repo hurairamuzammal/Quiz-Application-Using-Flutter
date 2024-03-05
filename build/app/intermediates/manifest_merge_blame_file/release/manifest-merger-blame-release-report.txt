@@ -15,8 +15,8 @@
 12-->C:\Users\Huraira\Extras\quiz_app\android\app\src\main\AndroidManifest.xml:4:9-42
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 13-->[androidx.core:core:1.6.0] C:\Users\Huraira\.gradle\caches\transforms-3\168e459aae59caaab0d2c703cf9d67ab\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
-14        android:icon="@mipmap/ic_launcher"
-14-->C:\Users\Huraira\Extras\quiz_app\android\app\src\main\AndroidManifest.xml:5:9-43
+14        android:icon="@mipmap/launcher_icon"
+14-->C:\Users\Huraira\Extras\quiz_app\android\app\src\main\AndroidManifest.xml:5:9-45
 15        android:label="Quiz App" >
 15-->C:\Users\Huraira\Extras\quiz_app\android\app\src\main\AndroidManifest.xml:3:9-33
 16        <activity

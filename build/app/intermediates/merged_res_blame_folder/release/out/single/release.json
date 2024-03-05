@@ -60,8 +60,16 @@
         "source": "com.example.quiz_app-core-1.6.0-1:/layout-v16/notification_template_custom_big.xml"
     },
     {
+        "merged": "com.example.quiz_app-merged_res-11:/mipmap-xhdpi_launcher_icon.png.flat",
+        "source": "com.example.quiz_app-main-4:/mipmap-xhdpi/launcher_icon.png"
+    },
+    {
         "merged": "com.example.quiz_app-merged_res-11:/drawable_notification_icon_background.xml.flat",
         "source": "com.example.quiz_app-core-1.6.0-1:/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "com.example.quiz_app-merged_res-11:/mipmap-xxhdpi_launcher_icon.png.flat",
+        "source": "com.example.quiz_app-main-4:/mipmap-xxhdpi/launcher_icon.png"
     },
     {
         "merged": "com.example.quiz_app-merged_res-11:/drawable_launch_background.xml.flat",
@@ -74,6 +82,10 @@
     {
         "merged": "com.example.quiz_app-merged_res-11:/layout_custom_dialog.xml.flat",
         "source": "com.example.quiz_app-core-1.6.0-1:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "com.example.quiz_app-merged_res-11:/mipmap-hdpi_launcher_icon.png.flat",
+        "source": "com.example.quiz_app-main-4:/mipmap-hdpi/launcher_icon.png"
     },
     {
         "merged": "com.example.quiz_app-merged_res-11:/layout-v21_notification_template_icon_group.xml.flat",
@@ -98,6 +110,10 @@
     {
         "merged": "com.example.quiz_app-merged_res-11:/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "com.example.quiz_app-core-1.6.0-1:/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "com.example.quiz_app-merged_res-11:/mipmap-mdpi_launcher_icon.png.flat",
+        "source": "com.example.quiz_app-main-4:/mipmap-mdpi/launcher_icon.png"
     },
     {
         "merged": "com.example.quiz_app-merged_res-11:/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -146,6 +162,10 @@
     {
         "merged": "com.example.quiz_app-merged_res-11:/mipmap-mdpi_ic_launcher.png.flat",
         "source": "com.example.quiz_app-main-4:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.quiz_app-merged_res-11:/mipmap-xxxhdpi_launcher_icon.png.flat",
+        "source": "com.example.quiz_app-main-4:/mipmap-xxxhdpi/launcher_icon.png"
     },
     {
         "merged": "com.example.quiz_app-merged_res-11:/layout_notification_action.xml.flat",

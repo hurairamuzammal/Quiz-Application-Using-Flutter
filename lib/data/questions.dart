@@ -3,6 +3,15 @@ import 'package:quiz_app/models/quiz_question.dart';
 //working on this currently
 const questions = [
   QuizQuestion(
+    'What is the purpose of the "new" keyword in C++?',
+    [
+      'To dynamically allocate memory',
+      'To create a new class',
+      'To declare a new variable',
+      'None of the above',
+    ],
+  ),
+  QuizQuestion(
     'What is a data structure in C++?',
     [
       'A way to store and organize data',
@@ -66,21 +75,12 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'What is the purpose of the "const" keyword in C++?',
+    'What is the primary purpose of a destructor in C++?',
     [
-      'To declare a variable whose value cannot be changed',
-      'To declare a variable whose value can be changed',
-      'To create a new class',
-      'None of the above',
-    ],
-  ),
-  QuizQuestion(
-    'What is the purpose of the "new" keyword in C++?',
-    [
-      'To dynamically allocate memory',
-      'To create a new class',
-      'To declare a new variable',
-      'None of the above',
+      'To clean up and reclaim memory',
+      'To initialize objects',
+      'To allocate memory',
+      'To copy objects',
     ],
   ),
   QuizQuestion(
@@ -90,6 +90,24 @@ const questions = [
       'To delete a variable',
       'To delete a class',
       'None of the above',
+    ],
+  ),
+  QuizQuestion(
+    'What is a Queue in Data Structures?',
+    [
+      'A FIFO data structure',
+      'A LIFO data structure',
+      'A type of array',
+      'A type of linked list',
+    ],
+  ),
+  QuizQuestion(
+    'What does the "std" in C++ stand for?',
+    [
+      'Standard',
+      'State',
+      'Static',
+      'Start',
     ],
   ),
 ];

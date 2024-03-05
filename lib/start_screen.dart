@@ -16,23 +16,23 @@ class StartScreen extends StatelessWidget {
             color: const Color.fromRGBO(255, 255, 255, 0.355),
           ),
           const SizedBox(
-            height: 80,
+            height: 70,
           ),
           Text(
             "Learn Flutter the Fun Way!!",
             style: GoogleFonts.montserrat(
               color: const Color.fromARGB(255, 255, 194, 234),
-              fontSize: 15,
+              fontSize: 20,
             ),
           ),
           const SizedBox(
-            height: 5,
+            height: 10,
           ),
           Text(
-            "by Huraira Muzammal",
+            "Devopled by Huraira Muzammal",
             style: GoogleFonts.montserrat(
               color: const Color.fromARGB(255, 255, 194, 234),
-              fontSize: 15,
+              fontSize: 13,
               fontWeight: FontWeight.bold,
             ),
           ),
