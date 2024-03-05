@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/data/questions.dart';
 import 'package:quiz_app/question_summary.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen({
@@ -42,14 +43,22 @@ class ResultsScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-                'You answered $numCorrectAnswers of $numTotalQuestion questions correctly!'),
+              'You answered $numCorrectAnswers of $numTotalQuestion questions correctly!',
+              style: GoogleFonts.montserrat(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: const Color.fromARGB(255, 255, 194, 234),
+              ),
+              textAlign: TextAlign.center,
+            ),
             const SizedBox(
-              height: 30,
+              height: 35,
             ),
             QuestionsSummary(summaryData),
             const SizedBox(
-              height: 30,
+              height: 40,
             ),
+            // restart key
             OutlinedButton.icon(
               onPressed: () {
                 onRestartQuiz();
@@ -60,8 +69,13 @@ class ResultsScreen extends StatelessWidget {
               icon: const Icon(
                 Icons.restart_alt_rounded,
               ),
-              label: const Text(
+              label: Text(
                 "Restart Quiz",
+                style: GoogleFonts.montserrat(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                  color: const Color.fromARGB(255, 255, 194, 234),
+                ),
               ),
             ),
           ],

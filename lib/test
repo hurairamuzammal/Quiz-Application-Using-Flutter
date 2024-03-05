@@ -1,0 +1,6 @@
+  child: DefaultTextStyle(
+          style: GoogleFonts.quicksand(
+            fontSize: 15,
+            fontWeight: FontWeight.normal,
+            color: const Color.fromARGB(255, 255, 213, 243),
+          ),

@@ -26,6 +26,17 @@ class StartScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(
+            height: 5,
+          ),
+          Text(
+            "by Huraira Muzammal",
+            style: GoogleFonts.montserrat(
+              color: const Color.fromARGB(255, 255, 194, 234),
+              fontSize: 15,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(
             height: 25,
           ),
           OutlinedButton.icon(
@@ -38,8 +49,13 @@ class StartScreen extends StatelessWidget {
             icon: const Icon(
               Icons.arrow_right_alt_outlined,
             ),
-            label: const Text(
+            label: Text(
               "Start Quiz",
+              style: GoogleFonts.montserrat(
+                fontSize: 15,
+                fontWeight: FontWeight.w500,
+                color: const Color.fromARGB(255, 255, 194, 234),
+              ),
             ),
           ),
         ],
