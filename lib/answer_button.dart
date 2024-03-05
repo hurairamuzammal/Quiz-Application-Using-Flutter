@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-// the class here is the styling of buttons
 class AnswerButton extends StatelessWidget {
   const AnswerButton({
     super.key,
@@ -8,26 +8,29 @@ class AnswerButton extends StatelessWidget {
     required this.onTap,
   });
   final String answerText;
-  final void Function() onTap;
+  final VoidCallback onTap;
+
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {
-        onTap();
-      },
+      onPressed: onTap,
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 40),
         backgroundColor: const Color.fromARGB(179, 180, 3, 139),
         foregroundColor: const Color.fromARGB(255, 255, 255, 255),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(40),
+          borderRadius: BorderRadius.circular(64),
         ),
       ),
       child: Text(
         answerText,
         textAlign: TextAlign.center,
+        style: GoogleFonts.montserrat(
+          fontSize: 13,
+          fontWeight: FontWeight.normal,
+          color: const Color.fromARGB(255, 255, 194, 234),
+        ),
       ),
     );
   }
 }
-//it should be figured now 

@@ -1,60 +1,95 @@
 import 'package:quiz_app/models/quiz_question.dart';
 
 //working on this currently
-
 const questions = [
   QuizQuestion(
-    'What are the main building blocks of Flutter UIs?',
+    'What is a data structure in C++?',
     [
-      'Widgets',
-      'Components',
-      'Blocks',
-      'Functions',
+      'A way to store and organize data',
+      'A special type of function',
+      'A library for graphics',
+      'A tool for debugging',
     ],
   ),
   QuizQuestion(
-    'How are Flutter UIs built?',
+    'What is the time complexity of accessing an element in an array?',
     [
-      'By combining widgets in code',
-      'By combining widgets in a visual editor',
-      'By defining widgets in config files',
-      'By using XCode for iOS and Android Studio for Android',
+      'O(1)',
+      'O(n)',
+      'O(n^2)',
+      'O(log n)',
     ],
   ),
   QuizQuestion(
-    'What\'s the purpose of a StatefulWidget?',
+    'What is encapsulation in OOP?',
     [
-      'Update UI as data changes',
-      'Update data as UI changes',
-      'Ignore data changes',
-      'Render UI that does not depend on data',
-    ],
-  ),
-  QuizQuestion(
-    'Which widget should you try to use more often: StatelessWidget or StatefulWidget?',
-    [
-      'StatelessWidget',
-      'StatefulWidget',
-      'Both are equally good',
+      'Wrapping up of data and functions into a single unit',
+      'Creating new classes from existing ones',
+      'The capability of a class to derive properties from another class',
       'None of the above',
     ],
   ),
   QuizQuestion(
-    'What happens if you change data in a StatelessWidget?',
+    'What is a virtual function in C++?',
     [
-      'The UI is not updated',
-      'The UI is updated',
-      'The closest StatefulWidget is updated',
-      'Any nested StatefulWidgets are updated',
+      'A function that can be overridden in a derived class',
+      'A function that cannot be accessed outside the class',
+      'A function that is always public',
+      'A function that cannot be overridden',
     ],
   ),
   QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
+    'What is the purpose of a constructor in C++?',
     [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
+      'To initialize the objects of a class',
+      'To destroy the objects of a class',
+      'To allocate memory for the objects of a class',
+      'None of the above',
+    ],
+  ),
+  QuizQuestion(
+    'What is the purpose of the "this" pointer in C++?',
+    [
+      'To point to the object which invokes the member function',
+      'To point to the first element of an array',
+      'To point to the base class of a derived class',
+      'None of the above',
+    ],
+  ),
+  QuizQuestion(
+    'What is the purpose of the "final" keyword in C++?',
+    [
+      'To prevent a class from being inherited or a member function from being overridden',
+      'To allow a class to be inherited or a member function to be overridden',
+      'To create a new class',
+      'None of the above',
+    ],
+  ),
+  QuizQuestion(
+    'What is the purpose of the "const" keyword in C++?',
+    [
+      'To declare a variable whose value cannot be changed',
+      'To declare a variable whose value can be changed',
+      'To create a new class',
+      'None of the above',
+    ],
+  ),
+  QuizQuestion(
+    'What is the purpose of the "new" keyword in C++?',
+    [
+      'To dynamically allocate memory',
+      'To create a new class',
+      'To declare a new variable',
+      'None of the above',
+    ],
+  ),
+  QuizQuestion(
+    'What is the purpose of the "delete" keyword in C++?',
+    [
+      'To deallocate memory that was previously allocated by "new"',
+      'To delete a variable',
+      'To delete a class',
+      'None of the above',
     ],
   ),
 ];
