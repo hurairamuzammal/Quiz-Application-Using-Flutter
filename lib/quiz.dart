@@ -30,6 +30,14 @@ class _QuizState extends State<Quiz> {
     }
   }
 
+  void resetQuiz() {
+    setState(() {
+      activeScreen = "start-screen";
+      answerSelected = [];
+    });
+    //pass this function to the result screen
+  }
+
   @override
   Widget build(BuildContext context) {
     //  using terniary operation
@@ -48,8 +56,10 @@ class _QuizState extends State<Quiz> {
     if (activeScreen == 'result-screen') {
       screenWidget = ResultsScreen(
         chosenAnswers: answerSelected,
+        onRestartQuiz: resetQuiz,
       );
     }
+
     return MaterialApp(
       home: Scaffold(
         body: Container(

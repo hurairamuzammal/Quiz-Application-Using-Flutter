@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:quiz_app/data/questions.dart';
 import 'package:quiz_app/question_summary.dart';
 
@@ -7,10 +6,10 @@ class ResultsScreen extends StatelessWidget {
   const ResultsScreen({
     super.key,
     required this.chosenAnswers,
+    required this.onRestartQuiz,
   });
-
   final List<String> chosenAnswers;
-
+  final void Function() onRestartQuiz;
   List<Map<String, Object>> getSummaryData() {
     final List<Map<String, Object>> summary = [];
 
@@ -30,6 +29,11 @@ class ResultsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final summaryData = getSummaryData();
+    final numTotalQuestion = questions.length;
+    final numCorrectAnswers = summaryData.where((data) {
+      return data['correct_answer'] == data['user_answer'];
+    }).length;
     return SizedBox(
       width: double.infinity,
       child: Container(
@@ -37,18 +41,29 @@ class ResultsScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('You answered X out of Y questions correctly!'),
+            Text(
+                'You answered $numCorrectAnswers of $numTotalQuestion questions correctly!'),
             const SizedBox(
               height: 30,
             ),
-            QuestionsSummary(getSummaryData()),
+            QuestionsSummary(summaryData),
             const SizedBox(
               height: 30,
             ),
-            TextButton(
-              onPressed: () {},
-              child: const Text('Restart Quiz!'),
-            )
+            OutlinedButton.icon(
+              onPressed: () {
+                onRestartQuiz();
+              },
+              style: OutlinedButton.styleFrom(
+                foregroundColor: Colors.white,
+              ),
+              icon: const Icon(
+                Icons.restart_alt_rounded,
+              ),
+              label: const Text(
+                "Restart Quiz",
+              ),
+            ),
           ],
         ),
       ),
